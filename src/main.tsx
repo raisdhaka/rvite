@@ -5,8 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import About from './pages/components/About.tsx'
-import Home from './pages/components/Home.tsx'
+import About from './pages/About.tsx'
+import Home from './pages/Home.tsx'
+import Contact from './pages/Contact.tsx'
 
 
 const router = createBrowserRouter([
@@ -17,7 +18,11 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
-  }
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
